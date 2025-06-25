@@ -10,3 +10,4 @@ perf.*
 *.ipynb
 subprojects/fmt-*
 subprojects/packagecache
+test
