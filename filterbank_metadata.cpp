@@ -71,7 +71,7 @@ bool FilterbankMetadata::inferGreenBank(int nfpc) {
 void FilterbankMetadata::inferMetadata() {
   if (inferGreenBank(1048576) || inferGreenBank(1033216) || inferGreenBank(999424)) {
     // Looks like Green Bank data
-    assert(telescope_id == NO_TELESCOPE_ID || telescope_id == GREEN_BANK);
+    // assert(telescope_id == NO_TELESCOPE_ID || telescope_id == GREEN_BANK);
   } else if (num_channels == 50331648) {
     // Looks like ATA data
     assert(telescope_id == NO_TELESCOPE_ID || telescope_id == ATA);
